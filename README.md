@@ -18,7 +18,7 @@ Type python my_nba_game_analysis.py
 
 ## Usage
 TODO - How does it work?
-One should
+One should activate the function on the script. The functions are commented on the script. You should activate them erasing the comments
 ./my_project argument1 argument2
 ```
 

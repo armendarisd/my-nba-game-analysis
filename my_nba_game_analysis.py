@@ -1,15 +1,18 @@
 import functions_declaration as fd
 
-# PLEASE CHECK README.md FILE
-# iF YOU WANT TO CHECK THE CODE OF THE FUNCTIONS, THEN PLEASE CHECK "FUNCTIONS_DECLARATION.PY" FILE
-
-print("PART I")
-print(fd.analyse_nba_game("NBA_game.txt"))
-print("-------------------------------------------------------------------------------------------------------------------------------------")
 
 
-dictionary_game_summary = fd.analyse_nba_game("NBA_game.txt")
-print("PART II")
+# PART I - PRINT DICTIONARY
+print('PART I')
+play_by_play_moves = 'NBA_game.txt'
+print(fd.analyse_nba_game(play_by_play_moves))
+
+dictionary_game_summary = fd.analyse_nba_game(play_by_play_moves)
+
+# PART II - PRINT DATAFRAME
+
+print('PART II')
+print('Home team')
 print(fd.print_nba_game_stats(dictionary_game_summary)[0])
-print("-------------------------------------------------------------------------------------------------------------------------------------")
+print('Away Team')
 print(fd.print_nba_game_stats(dictionary_game_summary)[1])
